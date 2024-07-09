@@ -27,12 +27,8 @@ const Login = () => {
       setAlignment(newAlignment);
     }
   };
-  console.log(alignment, "alignments");
   return (
-    <Container
-      maxWidth="xl"
-      sx={{ border: "1px solid green", height: "1099px", fontFamily: "" }}
-    >
+    <Container maxWidth="xl" sx={{ height: "auto", fontFamily: "" }}>
       <Box
         sx={{
           border: "1px solid gray",
@@ -42,7 +38,7 @@ const Login = () => {
           //   display: "flex",
           justifyContent: "center",
           //   alignItems: "center",
-          marginTop: "20px",
+          // marginTop: "20px",
           mx: "auto",
           //   my: "auto",
         }}
@@ -221,7 +217,7 @@ const Login = () => {
                     width: "75%",
                     "& .MuiOutlinedInput-root": {
                       borderRadius: "4px 0 0 4px",
-                      height: "41px",   
+                      height: "41px",
                     },
                   }}
                   placeholder="Enter OTP"
