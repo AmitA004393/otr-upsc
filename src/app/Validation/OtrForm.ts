@@ -6,8 +6,9 @@ const formConfig = {
         label: 'Candidate Name',
         type: 'text',
         placeholder: 'Enter candidate name',
-        validation: { required: false },
+        validation: { required: true },
         errorMessage: { required: 'Candidate name is required' },
+        regex:/^(?!.*\b(\w)\1{1,}\b)(?!.*\s{2,})[A-Z]+(?:\s[A-Z]+)*$/
       },
       verifyCandidateName: {
         label: 'Verify Candidate Name',

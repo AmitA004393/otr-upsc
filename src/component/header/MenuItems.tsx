@@ -54,7 +54,7 @@ const Menus = memo(() => {
   const [textColor, setTextColor] = useState("red");
   return (
     <MenuStyle>
-      <Container>
+      <Container >
         {" "}
         {menuData?.menu.map(({ content, label, icon, to }: any, i) => {
           return (

@@ -4,15 +4,7 @@
   box-sizing: border-box;
 }
 
-/* main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
-/* body > div#__next {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-} */
+body{
+  background-color: #eeeef0;
+}

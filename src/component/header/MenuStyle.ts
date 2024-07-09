@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const MenuStyle = styled('div')`
-  background: var(--tabcollapse);
+  background: white;
   border-bottom: 1px solid rgba(28, 39, 60, 0.12);
   box-shadow: 0 0 30px rgba(28, 39, 60, 0.08);
   padding: 0 15px;

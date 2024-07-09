@@ -31,7 +31,7 @@ export default function RootLayout({
             component="main"
             sx={{
             
-              minHeight: "calc(100vh - 128px)", // 64px header + 64px footer
+              // minHeight: "calc(100vh - 128px)", // 64px header + 64px footer
             }}
           >
             {children}

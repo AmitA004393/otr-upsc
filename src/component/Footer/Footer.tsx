@@ -32,7 +32,7 @@ const FooterStyle = styled("div")`
   background-color: #2947a3;
   border-top: 1px solid var(--formBorderColor);
   padding: 20px 0;
-  //   display: flex;
+  margin-top: 50px;
   ul,
   li {
     margin: 0;
