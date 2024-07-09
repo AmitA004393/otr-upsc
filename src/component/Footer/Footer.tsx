@@ -4,7 +4,7 @@ import { memo, useState, useEffect } from "react";
 import { Col, Row, Container } from "reactstrap";
 // import AppLogo from 'theme-library/Layout/AppLogo'
 // import { FooterStyle } from "./FooterStyle";
-import { Twitter, Facebook, YouTube, LinkedIn } from "@mui/icons-material";
+import { Twitter, Facebook, YouTube, LinkedIn, Height } from "@mui/icons-material";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import Cipllogo from "app/assets/images/cipllogo.png";
 // import { getItem, removeItem } from 'utils/storage'
@@ -32,7 +32,9 @@ const FooterStyle = styled("div")`
   background-color: #2947a3;
   border-top: 1px solid var(--formBorderColor);
   padding: 20px 0;
-  margin-top: 50px;
+  margin-top: 100px;
+  position:relative;
+  bottom:0;
   ul,
   li {
     margin: 0;
@@ -93,7 +95,7 @@ const FooterStyle = styled("div")`
     }
   }
   .visit {
-    margin-bottom: 15px;
+    // margin-bottom: 10px;
     h2 {
       color: white;
       font-size: 0.9rem;

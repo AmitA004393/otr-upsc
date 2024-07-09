@@ -108,6 +108,98 @@ const formConfig = {
       },
     },
   },
+  candidateEducation: {
+    fields: {
+      Class10thBoardExaminationRollNo: {
+        label: 'Class 10th Board Examination Roll No',
+        type: 'text',
+        placeholder: 'Class 10th Board Examination Roll No*',
+        validation: { required: true },
+        errorMessage: { required: 'Candidate name is required' },
+        regex:/^(?!.*\b(\w)\1{1,}\b)(?!.*\s{2,})[A-Z]+(?:\s[A-Z]+)*$/
+      },
+      PassingYearoftheClass10th: {
+        label: 'Passing Year of the Class 10th*',
+        type: 'text',
+        placeholder: 'Passing Year of the Class 10th*',
+        validation: { required: true },
+        errorMessage: { required: 'Verification is required' },
+      },
+      Class10thBoardName: {
+        label: 'Class 10th Board Name*',
+        type: 'select',
+        options: [
+          { value: '', label: 'Select Class 10th Board Name*' },
+          { value: 'male', label: 'Male' },
+          { value: 'female', label: 'Female' },
+          { value: 'other', label: 'Other' },
+        ],
+        validation: { required: true },
+        errorMessage: { required: 'Gender is required' },
+      },
+     
+     
+      
+      EnterBoardName: {
+        label: 'Enter Board Name',
+        type: 'text',
+        placeholder: 'Enter Board Name ',
+        validation: { required: true },
+        errorMessage: { required: 'Verification is required' },
+      },
+     
+     
+     
+    
+    },
+  },
+  candidateContactDetails:{
+    fields: {
+      emailAddress: {
+        label: 'E-Mail Address',
+        type: 'email',
+        placeholder: 'Please enter e-mail address',
+        validation: { required: true },
+        errorMessage: { required: 'E-Mail is required' },
+        regex:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+      },
+      mobileNumber: {
+        label: 'Mobile Number*',
+        type: 'number',
+        placeholder: 'Please enter mobile number',
+        validation: { required: true },
+        errorMessage: { required: 'Mobile number is required' },
+        regex:/^\+?(\d{1,3})?[-.\s]?(\(?\d{1,4}\)?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/
+      },
+      altEmailAddress: {
+        label: 'Alternate E-mail Address',
+        type: 'email',
+        placeholder: 'Please enter e-mail address',
+        validation: { required: false },
+        // errorMessage: { required: 'E-Mail is required' },
+        regex:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+      },
+     
+      altMobileNumber: {
+        label: 'Mobile Number',
+        type: 'number',
+        placeholder: 'Please enter alternate mobile number',
+        validation: { required: false },
+        errorMessage: { required: 'Alternate mobile number is required' },
+        regex:/^\+?(\d{1,3})?[-.\s]?(\(?\d{1,4}\)?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/
+      },
+
+      capcha: {
+        label: 'Captcha',
+        type: 'text',
+        placeholder: 'Enter the letter as they are shown in the image above.',
+        validation: { required: false },
+        errorMessage: { required: 'Captcha is required' },
+        // regex:/^\+?(\d{1,3})?[-.\s]?(\(?\d{1,4}\)?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/
+      },
+     
+    },
+  }
 };
 
 export default formConfig;

@@ -38,7 +38,9 @@ export default function RootLayout({
           </Box>
           <Footer />
         </AuthProvider>
+        
       </body>
+      
     </html>
   );
 }
