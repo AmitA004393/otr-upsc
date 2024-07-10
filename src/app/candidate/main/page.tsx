@@ -4,6 +4,7 @@ import { memo } from 'react'
 // import CardBox from './dashboard/cardbox'
 import { Box, Grid } from '@mui/material'
 import Profile from '../profile/page'
+import VerticalNotificationStepper from '../notification/page'
 // import Notification from './dashboard/Notification'
 
 // eslint-disable-next-line react/display-name
@@ -23,6 +24,7 @@ const Candidate_main = memo(() => {
           </Grid>
           <Grid item xs={12} md={4}>
             {/* <Notification /> */} notification
+            <VerticalNotificationStepper/>
           </Grid>
         </Grid>
         {/* <ApplicationTab /> */} application tab

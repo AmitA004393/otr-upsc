@@ -4,13 +4,16 @@ export const ProfileStyle = styled('div')`
   margin-top: 5px;
 
   .heading {
-    color: var(--heading);
-    font-family: Roboto;
+    color: #FFFFFF;
+    /* font-family: Roboto; */
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    margin-bottom:16px
+    line-height: 40px;
+    /* margin-bottom:16px; */
+    background-color: #2947A3;
+    height: 40px;
+    padding-left: 10px;
   }
  .box{
   margin-bottom:16px;
@@ -20,7 +23,7 @@ export const ProfileStyle = styled('div')`
 .profilebox { 
     display: flex;
     border-radius: 6px;
-    border: 1px solid var(--formBorderColor);
+    border: 1px solid #CDD4E0;
     padding: 8px;
     gap: 16px;
 }
@@ -36,6 +39,7 @@ export const ProfileStyle = styled('div')`
     border-radius: 6px;
     background: rgba(0, 0, 0, 0.10);
     overflow: hidden; 
+    position: relative;
 }
 
 .profileimg {
